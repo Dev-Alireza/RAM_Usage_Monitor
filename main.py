@@ -7,7 +7,7 @@ import os
 memory = psutil.virtual_memory()
 
 # Total physical memory in megabytes
-total_memory = memory.total / 1_000_000_000
+total_memory = int(memory.total / 1_000_000_000)
 
 # Available physical memory in megabytes
 available_memory = round(memory.available / 1_000_000_000, 2)
